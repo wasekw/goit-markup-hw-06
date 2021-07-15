@@ -611,6 +611,78 @@
             <use href="./images/svg/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form action="#">
+          <b class="modal-form-head">Оставьте свои данные, мы вам перезвоним</b>
+          <label class="modal-form-label"
+            >Имя
+            <span class="modal-form-input-wrapper">
+              <input
+                class="modal-form-input"
+                type="text"
+                name="user-name"
+                minlength="5"
+                pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                title="Имя должно содержать символы латиницы и кирилицы"
+                required
+              />
+              <svg class="modal-form-input-img">
+                <use href="./images/svg/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-label"
+            >Телефон
+            <span class="modal-form-input-wrapper">
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="user-phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="095-111-11-11"
+                required
+              />
+              <svg class="modal-form-input-img">
+                <use href="./images/svg/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-label"
+            >Почта
+            <span class="modal-form-input-wrapper">
+              <input
+                class="modal-form-input"
+                type="email"
+                name="user-email"
+                required
+              />
+              <svg class="modal-form-input-img">
+                <use href="./images/svg/icons.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-label"
+            >Комментарий
+            <textarea
+              class="modal-form-message"
+              name="user-message"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <input
+            type="checkbox"
+            class="modal-form-checkbox visually-hidden"
+            name="user-accept"
+            id="accept-policy"
+          />
+          <label class="modal-form-checkbox-label" for="accept-policy"
+            >Соглашаюсь с рассылкой и принимаю&nbsp;<a
+              href="#"
+              class="modal-form-label-link"
+              >Условия договора</a
+            ></label
+          >
+          <button class="btn-modal-send" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
